@@ -224,6 +224,8 @@ https://user-images.githubusercontent.com/60685289/189894419-0254ee21-1f78-4d74-
 
 # Lab 2 Part 2
 
+# Was waiting for the webcam to merge it to my project. Will upload my Lab 2 work in a few moments. 
+
 Pull Interactive Lab Hub updates to your repo.
 
 Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
