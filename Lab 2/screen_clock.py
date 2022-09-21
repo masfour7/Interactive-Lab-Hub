@@ -6,6 +6,8 @@ from PIL import Image, ImageDraw, ImageFont
 import adafruit_rgb_display.st7789 as st7789
 from datetime import datetime
 
+import random
+
 # Configuration for CS and DC pins (these are FeatherWing defaults on M0/M4):
 cs_pin = digitalio.DigitalInOut(board.CE0)
 dc_pin = digitalio.DigitalInOut(board.D25)
@@ -51,8 +53,6 @@ bottom = height - padding
 # Move left to right keeping track of the current x position for drawing shapes.
 x = 0
 
-screen = 0
-
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
@@ -69,6 +69,19 @@ buttonA.switch_to_input()
 buttonB = digitalio.DigitalInOut(board.D24)
 buttonB.switch_to_input()
 
+screen = 0
+
+import os
+# os.popen('sh /home/pi/text2speech/espeak_demo.sh')
+
+x = random.randint(1, 100)
+t = random.randint(1, 100)
+
+z = x + t + 1
+
+print(x, t, z)
+
+
 while True:
     # Draw a black filled box to clear the image.
     draw.rectangle((0, 0, width, height), outline=0, fill=0)
@@ -79,39 +92,46 @@ while True:
     
     line1 = now_str
     line2 = "GOOD MORNING!!"
-    line3 = "Wake up!!!"
-    y = top
-
+    line3 = "Wake Up!!!"
     
+    y = top
     
     # if buttonA.value and buttonB.value:
-        
+    #     screen = 0
 
-    if buttonB.value and not buttonA.value: #just button A pressed
-        screen +=1
-    
-    if not buttonB.value and buttonA.value: #just button B pressed
+    if buttonB.value and not buttonA.value: #just button A pressed (yes)
         screen +=2
+        x = random.randint(1, 100)
+        t = random.randint(1, 100)
 
-    if screen == 0:
-        draw.text((x,y), line3, font=font, fill='#58815b')
+        z = x + t + 10
+    
+    if not buttonB.value and buttonA.value: #just button B pressed (no)
+        screen += 1
+
+    if screen == 0: # Alarm / first eqn
+        os.popen('sh /home/pi/text2speech/espeak_demo.sh')
+        draw.text((x,y), line3, font=font, fill='#f5cb42')
         y += font.getsize(line3)[1]
-        draw.text((x,y), "35 + 40 = 75", font=font, fill='#58815b')
+        draw.text((x,y), f'{x} + {t} = {z}', font=font, fill='#58815b')
         y += font.getsize(line3)[1]
-        draw.text((x,y), "yes (top button) or no (bottom)?", font=font, fill='#58815b')
+        draw.text((x,y), "Yes (top button)?", font=font, fill='#58815b')
+        y += font.getsize(line3)[1]
+        draw.text((x,y), "No (bottom)?", font=font, fill='#58815b')
         y += font.getsize(line3)[1]
 
 
-    if screen == 1 or screen == 3:
+    if screen == 1 or screen == 3 or screen == 4: # correct
         draw.text((x,y), line1, font=font, fill='#58815b')
         y += font.getsize(line1)[1]
         draw.text((x,y), line2, font=font, fill='#f5cb42')
         y += font.getsize(line2)[1]
 
-    if screen == 2:
-        draw.text((x,y), "Wrong! Try again:", font=font, fill='#58815b')
+    if screen == 2: # wrong
+        os.popen('sh /home/pi/text2speech/espeak_demo.sh')
+        draw.text((x,y), "Wrong! Try Again..", font=font, fill='#f5cb42')
         y += font.getsize(line3)[1]
-        draw.text((x,y), "35 + 40 = 75", font=font, fill='#58815b')
+        draw.text((x,y), f'{x} + {t} = {z}', font=font, fill='#58815b')
         y += font.getsize(line3)[1]
         draw.text((x,y), "yes (top button) or no (bottom)?", font=font, fill='#58815b')
         y += font.getsize(line3)[1]
