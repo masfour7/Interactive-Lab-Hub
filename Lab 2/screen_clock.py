@@ -51,6 +51,8 @@ bottom = height - padding
 # Move left to right keeping track of the current x position for drawing shapes.
 x = 0
 
+screen = 0
+
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the
 # same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
@@ -79,16 +81,40 @@ while True:
     line2 = "GOOD MORNING!!"
     line3 = "Wake up!!!"
     y = top
+
     
-    if buttonA.value and buttonB.value:
+    
+    # if buttonA.value and buttonB.value:
+        
+
+    if buttonB.value and not buttonA.value: #just button A pressed
+        screen +=1
+    
+    if not buttonB.value and buttonA.value: #just button B pressed
+        screen +=2
+
+    if screen == 0:
         draw.text((x,y), line3, font=font, fill='#58815b')
         y += font.getsize(line3)[1]
-    
-    if buttonB.value and not buttonA.value: #just button A pressed
+        draw.text((x,y), "35 + 40 = 75", font=font, fill='#58815b')
+        y += font.getsize(line3)[1]
+        draw.text((x,y), "yes (top button) or no (bottom)?", font=font, fill='#58815b')
+        y += font.getsize(line3)[1]
+
+
+    if screen == 1 or screen == 3:
         draw.text((x,y), line1, font=font, fill='#58815b')
         y += font.getsize(line1)[1]
         draw.text((x,y), line2, font=font, fill='#f5cb42')
         y += font.getsize(line2)[1]
+
+    if screen == 2:
+        draw.text((x,y), "Wrong! Try again:", font=font, fill='#58815b')
+        y += font.getsize(line3)[1]
+        draw.text((x,y), "35 + 40 = 75", font=font, fill='#58815b')
+        y += font.getsize(line3)[1]
+        draw.text((x,y), "yes (top button) or no (bottom)?", font=font, fill='#58815b')
+        y += font.getsize(line3)[1]
         
     # Display image.
     disp.image(image, rotation)
