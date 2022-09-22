@@ -224,8 +224,27 @@ https://user-images.githubusercontent.com/60685289/189894419-0254ee21-1f78-4d74-
 
 # Lab 2 Part 2
 
-# Was waiting for the webcam to merge it to my project. Will upload my Lab 2 work in a few moments. 
+### Feedback
+- Rahul: it would be good to add an actual sound for it to properly function like an alarm lol
+- Brian Mulyadi: nice approach; what if we could also use it remotley
 
+### Concept, Design, and Testing
+After forming the idea and forming a protorype I got initial feedback from others about it for Lab2 part 1. This lead me to realize the imprtance need of an audio output, a better design of the screen (colors and so on), and good working functionality.
+
+So I merged the imises webcam to the alarm clock, added more colors to the screen, and built a first version of a working prototype. 
+
+Then, I wanted to test it with a real person while sleeping; while doing that I realised the it could be annoying a bit, so I added words to the alarm. The person might feel that someone is waking him/her up better than just an annoying sound.
+
+### Technical part and Testing
+to generate the math problems I used the Random library to generate random numbers and calculate results. I also used the os library to execute the command the will output the audio through the webcam. 
+Please see code for datails.
+
+### Video
+Please see documentation inside the video (in addition to the documentation above):
+
+https://user-images.githubusercontent.com/60685289/191602637-3b4aa54b-abea-4eb7-8693-7e83048518f3.mov
+
+-----------
 Pull Interactive Lab Hub updates to your repo.
 
 Modify the code from last week's lab to make a new visual interface for your new clock. You may [extend the Pi](Extending%20the%20Pi.md) by adding sensors or buttons, but this is not required.
