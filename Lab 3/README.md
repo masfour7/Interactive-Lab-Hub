@@ -57,6 +57,7 @@ You can also play audio files directly with `aplay filename`. Try typing `aplay 
 
 \*\***Write your own shell file to use your favorite of these TTS engines to have your Pi greet you by name.**\*\*
 (This shell file should be saved to your own repo for this lab.)
+
 Please look at file custom_shell.sh
 
 Bonus: If this topic is very exciting to you, you can try out this new TTS system we recently learned about: https://github.com/rhasspy/larynx
@@ -81,6 +82,7 @@ Now, look at which camera you have. Do you have the cylinder camera (likely the 
 Then try `./vosk_demo_mic.sh`
 
 \*\***Write your own shell file that verbally asks for a numerical based input (such as a phone number, zipcode, number of pets, etc) and records the answer the respondent provides.**\*\*
+
 Please look at file called custom_shell2.sh
 
 ### Serving Pages
@@ -112,6 +114,18 @@ Write out what you imagine the dialogue to be. Use cards, post-its, or whatever 
 
 \*\***Please describe and document your process.**\*\*
 
+- Hey Alaa, would you like to watch something?
+--- Yes, sure
+- Cool, are you looking to watch a movie or would you like a specific channel?
+--- Movie
+- what type of movie would you be interested in?
+--- Horror!
+- Try this and let me know if you want something else: (show a movie)
+--- Something else
+- try this: (another movie)
+--- that's good
+- Enjoy!
+
 ### Acting out the dialogue
 
 Find a partner, and *without sharing the script with your partner* try out the dialogue you've designed, where you (as the device designer) act as the device you are designing.  Please record this interaction (for example, using Zoom's record feature).
@@ -119,10 +133,14 @@ Find a partner, and *without sharing the script with your partner* try out the d
 \*\***Describe if the dialogue seemed different than what you imagined when it was acted out, and how.**\*\*
 https://user-images.githubusercontent.com/60685289/192426661-201f92b7-b987-42e4-881b-ea2e5b6a3706.mov
 
+When asked what type of movie to watch, he replied with "open to anything." This opened another option to what I thought would be possible.
+Also, it turns out I would have to check after 30 seconds he/she liked the movie or would prefer something else.
+
 ### Wizarding with the Pi (optional)
 In the [demo directory](./demo), you will find an example Wizard of Oz project. In that project, you can see how audio and sensor data is streamed from the Pi to a wizard controller that runs in the browser.  You may use this demo code as a template. By running the `app.py` script, you can see how audio and sensor data (Adafruit MPU-6050 6-DoF Accel and Gyro Sensor) is streamed from the Pi to a wizard controller that runs in the browser `http://<YouPiIPAddress>:5000`. You can control what the system says from the controller as well!
 
 \*\***Describe if the dialogue seemed different than what you imagined, or when acted out, when it was wizarded, and how.**\*\*
+
 
 # Lab 3 Part 2
 
