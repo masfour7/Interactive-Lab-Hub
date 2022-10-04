@@ -23,11 +23,11 @@ i2c = busio.I2C(board.SCL, board.SDA)
 msa = MSA311(i2c)
 
 hostname = socket.gethostname()
-hardware = 'plughw:2,0'
+hardware = 'plughw:1,0'
 
 app = Flask(__name__)
 socketio = SocketIO(app)
-audio_stream = Popen("/usr/bin/cvlc alsa://"+hardware+" --sout='#transcode{vcodec=none,acodec=mp3,ab=256,channels=2,samplerate=44100,scodec=none}:http{mux=mp3,dst=:8080/}' --no-sout-all --sout-keep", shell=True)
+audio_stream = Popen("/usr/bin/cvlc alsa://"+hardware+" --sout='#transcode{vcodec=none,acodec=mp3,ab=256,channels=2,samplerate=16000,scodec=none}:http{mux=mp3,dst=:8080/}' --no-sout-all --sout-keep", shell=True)
 
 @socketio.on('speak')
 def handel_speak(val):
@@ -57,7 +57,8 @@ def signal_handler(sig, frame):
 signal.signal(signal.SIGINT, signal_handler)
 
 
-if __name__ == "__main__":
-    socketio.run(app, host='0.0.0.0', port=5000)
+# if __name__ == "__main__":
+#     socketio.run(app, host='0.0.0.0', port=5000)
 
-
+if __name__ == '__main__':
+    app.run(debug=True, host='0.0.0.0')
