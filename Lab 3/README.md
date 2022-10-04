@@ -1,5 +1,5 @@
 # Chatterboxes
-**NAMES OF COLLABORATORS HERE**
+**Mohammad Asfour (one person)**
 [![Watch the video](https://user-images.githubusercontent.com/1128669/135009222-111fe522-e6ba-46ad-b6dc-d1633d21129c.png)](https://www.youtube.com/embed/Q8FWzLMobx0?start=19)
 
 In this lab, we want you to design interaction with a speech-enabled device--something that listens and talks to you. This device can do anything *but* control lights (since we already did that in Lab 1).  First, we want you first to storyboard what you imagine the conversational interaction to be like. Then, you will use wizarding techniques to elicit examples of what people might say, ask, or respond.  We then want you to use the examples collected from at least two other people to inform the redesign of the device.
@@ -163,47 +163,44 @@ The system should:
 
 *Include videos or screencaptures of both the system and the controller.*
 
-## Test the system
-Try to get at least two people to interact with your system. (Ideally, you would inform them that there is a wizard _after_ the interaction, but we recognize that can be hard.)
-
-Answer the following:
-
-### What worked well about the system and what didn't?
-\*\**your answer here*\*\*
-
-### What worked well about the controller and what didn't?
-
-\*\**your answer here*\*\*
-
-### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
-
-\*\**your answer here*\*\*
-
-
-### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
-
-\*\**your answer here*\*\*
-
 ------
 
-### Feedback, idea exploration & process:
-The feedback I got for Lab3 part 1 was relevantly good but mostly classmates said that it was a bit similar to other things existing elsewhere. So I wanted to come up with a novel, yet simple concept. What if I could help blind people? It might be hard for them to find the medicine they are looking for. Using an APDS9960 I can measure the proximity of their hand to the medicine they're looking for and let them know how close they are using audio.
+### Feedback & Process:
+The feedback I got for Lab3 part 1 was relevantly good but mostly classmates said that it was a bit similar to other things existing elsewhere. So I wanted to come up with a novel, yet simple concept. What if I could help blind people? It might be hard for them to find the medicine they are looking for. Using an APDS9960 I can measure the proximity of their hand to the medicine they're looking for and let them know how close they are, using audio.
 
-### Idea explanation:
+### System & idea explanation:
 Two devices for blind people: one can be installed on the human ear. Another one is on the medicine itself.
 It will go through 3 stages:
 
 Part1: the device on the ear would ask if the person is facing any symptoms. Based on that, give him/her the best medicine available at home or recommend him to go to the doctor.
+
 Part2: a device on the medicine will start helping the blind person to look for it. When the person touches it, it will let him/her know
+
 Part3: the device on the ear will answer any questions the person might have about each medcine such as how many pieces to take per week.
 
-### Design:
+### Design & Testing the system:
 I went through multiple design stages. I started with a device that can be installed on the watch and then went to a more helpful one that can be installed on the ears. Also I added a second device that can be installed on the medicine itself to give the person a sense that the medicine is speaking to him/her.
 
 Then I enhanced the device by using some anticipation of misunderstanding and improving the timing of response given by the devices. That was implemented by testing the prototype with two users after I told them to close their eyes. I made the device speak ceratain sentences when it doesn't get what the user is saying. Also, I noticed from the testing that it would be better to increase the time allowance for the user to answer the device
 
 This my final storyboard that explaind the 3 parts process:
 ![image](https://user-images.githubusercontent.com/60685289/193746054-2bed6d7c-7b79-4084-a16e-95d51f9fddbb.png)
+
+### What worked well about the system and what didn't?
+
+Although it recognizes certain words needed for symptoms for example, it still lacks the efficiency. Also it can answer some few questions but is still very basic on this aspect and needs a lot of improvement.
+
+### What worked well about the controller and what didn't?
+
+When the hand completly holds the wanted medicine it correctly identifies that and lets the person know about it. However, it doesn't correctly identify how close the hand is to the wanted medicine.
+
+### What lessons can you take away from the WoZ interactions for designing a more autonomous version of the system?
+
+It is easy to use sensors with the pi so many other additions can be included in the system to help blind people. For example, it can automatically remind them to take a certain medicine at a specific time based on a set described by their doctor.
+
+### How could you use your system to create a dataset of interaction? What other sensing modalities would make sense to capture?
+
+This system can create a dataset for symptoms. It can get more vocabulary to include for symptoms that could help in finding the best medicine to take. Measuring the temperature could also be benificial to help people know if the current temparature is good for a particular type of medicine.
 
 ### video
 https://user-images.githubusercontent.com/60685289/193748648-d0389c08-fb90-4654-aee2-1cda0cf17df0.mov
