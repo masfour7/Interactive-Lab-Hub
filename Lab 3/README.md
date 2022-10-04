@@ -200,8 +200,12 @@ Part3: the device on the ear will answer any questions the person might have abo
 ### Design:
 I went through multiple design stages. I started with a device that can be installed on the watch and then went to a more helpful one that can be installed on the ears. Also I added a second device that can be installed on the medicine itself to give the person a sense that the medicine is speaking to him/her.
 
+Then I enhanced the device by using some anticipation of misunderstanding and improving the timing of response given by the devices. That was implemented by testing the prototype with two users after I told them to close their eyes. I made the device speak ceratain sentences when it doesn't get what the user is saying. Also, I noticed from the testing that it would be better to increase the time allowance for the user to answer the device
+
 This my final storyboard that explaind the 3 parts process:
 ![image](https://user-images.githubusercontent.com/60685289/193746054-2bed6d7c-7b79-4084-a16e-95d51f9fddbb.png)
 
 ### video
-Uploading Lab3ii.mov…
+https://user-images.githubusercontent.com/60685289/193748648-d0389c08-fb90-4654-aee2-1cda0cf17df0.mov
+
+
