@@ -184,3 +184,24 @@ Answer the following:
 
 \*\**your answer here*\*\*
 
+------
+
+### Feedback, idea exploration & process:
+The feedback I got for Lab3 part 1 was relevantly good but mostly classmates said that it was a bit similar to other things existing elsewhere. So I wanted to come up with a novel, yet simple concept. What if I could help blind people? It might be hard for them to find the medicine they are looking for. Using an APDS9960 I can measure the proximity of their hand to the medicine they're looking for and let them know how close they are using audio.
+
+### Idea explanation:
+Two devices for blind people: one can be installed on the human ear. Another one is on the medicine itself.
+It will go through 3 stages:
+
+Part1: the device on the ear would ask if the person is facing any symptoms. Based on that, give him/her the best medicine available at home or recommend him to go to the doctor.
+Part2: a device on the medicine will start helping the blind person to look for it. When the person touches it, it will let him/her know
+Part3: the device on the ear will answer any questions the person might have about each medcine such as how many pieces to take per week.
+
+### Design:
+I went through multiple design stages. I started with a device that can be installed on the watch and then went to a more helpful one that can be installed on the ears. Also I added a second device that can be installed on the medicine itself to give the person a sense that the medicine is speaking to him/her.
+
+This my final storyboard that explaind the 3 parts process:
+![image](https://user-images.githubusercontent.com/60685289/193746054-2bed6d7c-7b79-4084-a16e-95d51f9fddbb.png)
+
+### video
+Uploading Lab3ii.mov…
