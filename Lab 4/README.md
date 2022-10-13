@@ -176,11 +176,13 @@ Usually, sensors need to positioned in specific locations or orientations to mak
 
 ### Working on it - will submit ASAP.
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
+![image](https://user-images.githubusercontent.com/60685289/195509330-a1cd9e40-a298-4995-8ad5-ca87b36eefe0.png)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+What the size of the prototype should be is an imprtant main question. To answer it, different prototypes can be constructed and tested with user to figure out what's the most comfortable thing in terms of user experience. Also, for the distance sensor, where should it be located exactly. Since it has a certain width it can measure from. This would be critical for it to work as intended. Again it can be ansered by testing.
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
-
+Finding lost things (fifth sketch)
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
