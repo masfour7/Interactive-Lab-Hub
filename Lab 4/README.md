@@ -223,16 +223,31 @@ Here is an example:
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+![image](https://user-images.githubusercontent.com/60685289/195666370-b468d594-7c0f-4cf5-b713-bfd24da2fbf1.png)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+Can those be really created? Some are really small. Some are circular. Do we have the electronics & technology to create such things?
+
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
+I pick number two for the remote attachment.
+
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
+It includes three user interfaces: 
+- speaker: to activate a sound when you lose something)
+- distance sensor: to measure how far away you are from the remote)
+- display: to show a red screen turn off and on when you lose something so that you can notice it
+
+It should be as small as possible. Also one should be able to attach it to things like remote.
 
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
+![remote Find](https://user-images.githubusercontent.com/60685289/195666572-0661ff5f-8cdf-48f8-884e-6dd9bf07c534.jpeg)
+
+As you can see it is too big. I will explore ways to make it smaller next!
 
 
 LAB PART 2
