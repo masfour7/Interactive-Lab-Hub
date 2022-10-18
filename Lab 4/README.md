@@ -320,4 +320,8 @@ After multiple trials this is the design I found to be most comfortable; althoug
 
 Video: https://drive.google.com/file/d/1VqkEIfQioh8wOe6trSRM4nvaQBdyW37P/view?usp=sharing
 
-
+For future iterations:
+- find smaller devices
+- make the design look cooler and easy to attach
+- find more features such as GPS
+- connect it with an app to control device settings and so on
