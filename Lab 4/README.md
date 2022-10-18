@@ -290,6 +290,23 @@ We encourage you to try using these controls, **while** paying particular attent
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
+
+The main issue with the previous design was the size. It had to be much much smaller for a good user experience. I found two main things I can do to accomodate that:
+1. separate the devices: a user might not need all of them at the same time. 
+- blinking screen: It can be helpful to find lost things while at dark and do not want to make noise
+- distance sensor: It can be useful for blind people to help them navigate to the thing they're looking for
+- speakers: this might be the most useful option for everyone. the lost thing will give noise and that way you'll know where it is
+
+2. found smaller rasberry pi and speakers online (haven't used them yet; but for next iterations)
+
+That said, I had multiple iterations of how the design might look like and most importantly all are small:
+![image](https://user-images.githubusercontent.com/60685289/196446103-548454bf-3629-4cfc-a505-4c1f2cd293ba.png)
+
 * "Works like": shows what the device can do
+After multiple trials this is the design I found to be most comfortable; although it needs smaller rasberry pi and speakers:
+![WhatsApp Image 2022-10-18 at 4 23 41 PM](https://user-images.githubusercontent.com/60685289/196539541-b224144d-4b55-43a7-b699-48b0ae723b11.jpeg)
+![WhatsApp Image 2022-10-18 at 4 23 42 PM](https://user-images.githubusercontent.com/60685289/196539610-4dfe2946-63cf-4263-9a1f-f3afa54af0ff.jpeg)
+
+
 * "Acts like": shows how a person would interact with the device
 
