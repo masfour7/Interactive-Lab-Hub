@@ -305,10 +305,12 @@ That said, I had multiple iterations of how the design might look like and most 
 * "Works like": shows what the device can do
 
 After multiple trials this is the design I found to be most comfortable; although it needs smaller rasberry pi and speakers:
+
 ![WhatsApp Image 2022-10-18 at 4 23 41 PM](https://user-images.githubusercontent.com/60685289/196539541-b224144d-4b55-43a7-b699-48b0ae723b11.jpeg)
 ![WhatsApp Image 2022-10-18 at 4 23 42 PM](https://user-images.githubusercontent.com/60685289/196539610-4dfe2946-63cf-4263-9a1f-f3afa54af0ff.jpeg)
 
 * "Acts like": shows how a person would interact with the device
-https://user-images.githubusercontent.com/60685289/196540180-bb7bb2b5-912c-49ef-aa19-e63463cd508c.mov
+* 
+Video: https://drive.google.com/file/d/1VqkEIfQioh8wOe6trSRM4nvaQBdyW37P/view?usp=sharing
 
 
