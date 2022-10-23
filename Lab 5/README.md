@@ -147,15 +147,30 @@ Using the microphone, try one of the following:
 
 **1. Set up threshold detection** Can you identify when a signal goes above certain fixed values?
 
-'''
+```
 #Threshold Detection
 if volume > 55:
     print("The volume is greater than 55: ", volume)
-'''
+```
 
 **2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
 
+```
+#Running Average
+if len(VolumeHistory) != 0:
+    print("The volume running average is: ", np.sum(VolumeHistory) / len(VolumeHistory))
+```
+
 **3. Set up peak detection** Can you identify when your signal reaches a peak and then goes down?
+
+```
+# Peak Detection
+if len(VolumeHistory) > 2:
+    peak_threshold = 10
+    if (VolumeHistory[-3] - VolumeHistory[-2] < -peak_threshold) and (VolumeHistory[-2] - VolumeHistory[-1] > peak_threshold):
+        print("Peak has been detected")
+```
+                        
 
 For technical references:
 
