@@ -102,6 +102,26 @@ pi@ixe00:~/openCV-examples/object-detection $ python detect.py
 
 **\*\*\*Try each of the following four examples in the `openCV-examples`, include screenshots of your use and write about one design for each example that might work based on the individual benefits to each algorithm.\*\*\***
 
+### Contours
+![image](https://user-images.githubusercontent.com/60685289/197372119-29ebb24f-6ef1-43c0-b8f5-2ebcfa18e9c0.png)
+
+The contours detection can be used for drawing. Whether it's artists or a normal person who wants to get the lines of the picture correct for the initial dimensions.
+
+### face-detection
+![image](https://user-images.githubusercontent.com/60685289/197372196-101bbcb4-c30b-4e5a-aee6-a73c9edb0030.png)
+
+Face detection can be used in automatic door openning. Instead of hiring a door person, you can have this!
+
+### flow-detection
+![image](https://user-images.githubusercontent.com/60685289/197372262-3bc9d1aa-60ff-40da-8ffd-9c723c7a1d42.png)
+
+Flow detection can be used to see if something has moved in a house. You know how we see in horror movies where things move by itself; this can help us confirm that haha.
+
+### object detection
+![image](https://user-images.githubusercontent.com/60685289/197372605-4ff99a17-9b36-4eb1-ae40-6f13af6332ff.png)
+
+Object detection can help us see how many people are waiting for the bus loop. If they are a lot, an additional bus can get activated to accomodate for that.
+
 #### Filtering, FFTs, and Time Series data. 
 Additional filtering and analysis can be done on the sensors that were provided in the kit. For example, running a Fast Fourier Transform over the IMU or Microphone data stream could create a simple activity classifier between walking, running, and standing.
 
