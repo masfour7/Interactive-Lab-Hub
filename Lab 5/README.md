@@ -146,8 +146,9 @@ Now try the audio processing example:
 Using the microphone, try one of the following:
 
 **1. Set up threshold detection** Can you identify when a signal goes above certain fixed values?
+
 '''
-# Threshold Detection
+#Threshold Detection
 if volume > 55:
     print("The volume is greater than 55: ", volume)
 '''
