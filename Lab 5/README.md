@@ -256,6 +256,9 @@ This might take a while to get fully installed. After installation, connect your
 
 (**Optionally**: You can train your own model, too. First, visit [TeachableMachines](https://teachablemachine.withgoogle.com/train), select Image Project and Standard model. Second, use the webcam on your computer to train a model. For each class try to have over 50 samples, and consider adding a background class where you have nothing in view so the model is trained to know that this is the background. Then create classes based on what you want the model to classify. Lastly, preview and iterate, or export your model as a 'Tensorflow' model, and select 'Keras'. You will find an '.h5' file and a 'labels.txt' file. These are included in this labs 'teachable_machines' folder, to make the PPE model you used earlier. You can make your own folder or replace these to make your own classifier.)
 
+Some experimentation with the Teachable Machine Learning. It is awesome! Classifying mouse, phone, and none. The image below shows my experiment.
+![image](https://user-images.githubusercontent.com/60685289/197421225-f707d404-98d4-4fb7-a163-9ad1d42359ec.png)
+
 ~~**\*\*\*Whether you make your own model or not, include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.\*\*\***~~
 
 
@@ -271,6 +274,13 @@ This might take a while to get fully installed. After installation, connect your
 * Fill out the ``Contextual Interaction Design Tool`` sheet.[Found here.](ThinkingThroughContextandInteraction.png)
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
+
+The model I picked is the Teachable Machine. We always throw garbage and each time we would have to choose which category we have to throw it in. Sometimes we do not know the answer and throw it in the wrong place. There might be technologies out there that do that but since they are not yet in the mass market it is worth implementing something like or even better than them. At least from a user experience point of view. 
+
+Let's say you want to throw a plastic bottle of water, you can throw it in one place only and the machine would identify the location it should go to; in this case, the plastic side. It will show you a display telling you what the result was. Also, there would be a button to identify if the machine's result is something you agree with.
+![image](https://user-images.githubusercontent.com/60685289/197424250-75f6b0a1-be20-45ae-bd90-aa179e76fd6d.png)
+![image](https://user-images.githubusercontent.com/60685289/197424374-4b209905-4fbf-402c-8c5d-fc8aef4f4f9c.png)
+
 
 ### Part C
 ### Test the interaction prototype
