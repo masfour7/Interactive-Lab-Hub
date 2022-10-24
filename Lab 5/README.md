@@ -1,6 +1,6 @@
 # Observant Systems
 
-**NAMES OF COLLABORATORS HERE**
+**Mohammad Asfour Only**
 
 
 For lab this week, we focus on creating interactive systems that can detect and respond to events or stimuli in the environment of the Pi, like the Boat Detector we mentioned in lecture. 
@@ -147,9 +147,30 @@ Using the microphone, try one of the following:
 
 **1. Set up threshold detection** Can you identify when a signal goes above certain fixed values?
 
+```
+#Threshold Detection
+if volume > 55:
+    print("The volume is greater than 55: ", volume)
+```
+
 **2. Set up a running averaging** Can you set up a running average over one of the variables that are being calculated.[moving average](https://en.wikipedia.org/wiki/Moving_average)
 
+```
+#Running Average
+if len(VolumeHistory) != 0:
+    print("The volume running average is: ", np.sum(VolumeHistory) / len(VolumeHistory))
+```
+
 **3. Set up peak detection** Can you identify when your signal reaches a peak and then goes down?
+
+```
+# Peak Detection
+if len(VolumeHistory) > 2:
+    peak_threshold = 10
+    if (VolumeHistory[-3] - VolumeHistory[-2] < -peak_threshold) and (VolumeHistory[-2] - VolumeHistory[-1] > peak_threshold):
+        print("Peak has been detected")
+```
+                        
 
 For technical references:
 
@@ -159,6 +180,8 @@ For technical references:
 
 
 **\*\*\*Include links to your code here, and put the code for these in your repo--they will come in handy later.\*\*\***
+
+The link to the code is [here](https://github.com/masfour7/Interactive-Lab-Hub/blob/Fall2022/Lab%205/ExampleAudioFFT.py).
 
 ### (Optional Reading) Introducing Additional Concepts
 The following sections ([MediaPipe](#mediapipe) and [Teachable Machines](#teachable-machines)) are included for your own optional learning. **The associated scripts will not work on Fall 2022's Pi Image, so you can move onto part B.** However, you are welcome to try it on your personal computer. If this functionality is desirable for your lab or final project, we can help you get a different image running the last OS and version of python to make the following code work.
@@ -233,6 +256,9 @@ This might take a while to get fully installed. After installation, connect your
 
 (**Optionally**: You can train your own model, too. First, visit [TeachableMachines](https://teachablemachine.withgoogle.com/train), select Image Project and Standard model. Second, use the webcam on your computer to train a model. For each class try to have over 50 samples, and consider adding a background class where you have nothing in view so the model is trained to know that this is the background. Then create classes based on what you want the model to classify. Lastly, preview and iterate, or export your model as a 'Tensorflow' model, and select 'Keras'. You will find an '.h5' file and a 'labels.txt' file. These are included in this labs 'teachable_machines' folder, to make the PPE model you used earlier. You can make your own folder or replace these to make your own classifier.)
 
+Some experimentation with the Teachable Machine Learning. It is awesome! Classifying mouse, phone, and none. The image below shows my experiment.
+![image](https://user-images.githubusercontent.com/60685289/197421225-f707d404-98d4-4fb7-a163-9ad1d42359ec.png)
+
 ~~**\*\*\*Whether you make your own model or not, include screenshots of your use of Teachable Machines, and write how you might use this to create your own classifier. Include what different affordances this method brings, compared to the OpenCV or MediaPipe options.\*\*\***~~
 
 
@@ -249,21 +275,37 @@ This might take a while to get fully installed. After installation, connect your
 
 **\*\*\*Describe and detail the interaction, as well as your experimentation here.\*\*\***
 
+The model I picked is the Teachable Machine. We always throw garbage and each time we would have to choose which category we have to throw it in. Sometimes we do not know the answer and throw it in the wrong place. There might be technologies out there that do that but since they are not yet in the mass market it is worth implementing something like or even better than them. At least from a user experience point of view. 
+
+Let's say you want to throw a plastic bottle of water, you can throw it in one place only and the machine would identify the location it should go to; in this case, the plastic side. It will show you a display telling you what the result was. Also, there would be a button to identify if the machine's result is something you agree with.
+![image](https://user-images.githubusercontent.com/60685289/197424250-75f6b0a1-be20-45ae-bd90-aa179e76fd6d.png)
+![image](https://user-images.githubusercontent.com/60685289/197424374-4b209905-4fbf-402c-8c5d-fc8aef4f4f9c.png)
+
+
 ### Part C
 ### Test the interaction prototype
 
 Now flight test your interactive prototype and **note down your observations**:
 For example:
-1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+1. When does it do what it is supposed to do?
+3. When does it fail?
+4. When it fails, why does it fail?
+5. Based on the behavior you have seen, what other scenarios could cause problems?
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
 1. How bad would they be impacted by a miss classification?
 1. How could change your interactive system to address this?
 1. Are there optimizations you can try to do on your sense-making algorithm.
+
+The test was relatively succesful. I classifes objects (watter bottle, milk, perfume) correctly when held close to the webcam. However, when my face appears it becomes hard for it to classify them. This is probably because there are much more similarities in the pictures where my face is in them. So the best thing to do is to always remove background of the object and this would improve it by a lot. Other scenarios that may cause problem is showing different types of milk let's say; with different colors. 
+
+Someone who throws the garbage would normally just trust the machine to do its job. The problem arises when the garbage collectors find that somethings are mismatched. This would be big impact; but again humans sometimes make these mistakes so probably they are somewhat used to this? But since it's a machine, they might not welcome any mistakes by it. The problem is accuracy with all the different types of objects that exist out there. 
+
+One solution is to train a huge amount of images with different types, colors and then train the model. Another one is as said before take the background off any object that comes into the garbage, then classify it. The two images below show my prototype:
+
+![image](https://user-images.githubusercontent.com/60685289/197425954-e19238bb-0517-4486-8f21-e5d138c97af7.png)
+![image](https://user-images.githubusercontent.com/60685289/197425983-95d0dd3c-7a0f-4959-814f-450a7fa4c14b.png)
 
 ### Part D
 ### Characterize your own Observant system
@@ -279,6 +321,14 @@ During the lecture, we mentioned questions to help characterize a material:
 * How does X feel?
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+
+For this part, I added a background class to the garbage classifier as well. This can be used for identifying the type of object that is thrown in the garbage can. Then, show the user what the result is and an option manually change the result. Then, the garbage should automatically put it in its right place. Agood environment for it would be in the outside since this might take a lot of space. Also, inside the garbage there should be light always on to be able to classify the images (bad environment). The classification will break if multiple items were thrown in the garbage at once, since the classifier only works for one item at a time. It might show the wrong classification for one of the items and include it with other. Lastly this device should have a nice design which is the most important thing. The noise shouldn't be too lowed when putting the items in the right place. It should do it as fast as possible to give a place for the next item.
+
+A short video that shows how the classifier works is below: 
+
+
+https://user-images.githubusercontent.com/60685289/197429126-dc49f650-9e09-42a1-8c7b-6ac07204a2ec.mp4
+
 
 ### Part 2.
 
