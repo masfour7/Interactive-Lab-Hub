@@ -287,16 +287,25 @@ Let's say you want to throw a plastic bottle of water, you can throw it in one p
 
 Now flight test your interactive prototype and **note down your observations**:
 For example:
-1. When does it what it is supposed to do?
-1. When does it fail?
-1. When it fails, why does it fail?
-1. Based on the behavior you have seen, what other scenarios could cause problems?
+1. When does it do what it is supposed to do?
+3. When does it fail?
+4. When it fails, why does it fail?
+5. Based on the behavior you have seen, what other scenarios could cause problems?
 
 **\*\*\*Think about someone using the system. Describe how you think this will work.\*\*\***
 1. Are they aware of the uncertainties in the system?
 1. How bad would they be impacted by a miss classification?
 1. How could change your interactive system to address this?
 1. Are there optimizations you can try to do on your sense-making algorithm.
+
+The test was relatively succesful. I classifes objects (watter bottle, milk, perfume) correctly when held close to the webcam. However, when my face appears it becomes hard for it to classify them. This is probably because there are much more similarities in the pictures where my face is in them. So the best thing to do is to always remove background of the object and this would improve it by a lot. Other scenarios that may cause problem is showing different types of milk let's say; with different colors. 
+
+Someone who throws the garbage would normally just trust the machine to do its job. The problem arises when the garbage collectors find that somethings are mismatched. This would be big impact; but again humans sometimes make these mistakes so probably they are somewhat used to this? But since it's a machine, they might not welcome any mistakes by it. The problem is accuracy with all the different types of objects that exist out there. 
+
+One solution is to train a huge amount of images with different types, colors and then train the model. Another one is as said before take the background off any object that comes into the garbage, then classify it. The two images below show my prototype:
+
+![image](https://user-images.githubusercontent.com/60685289/197425954-e19238bb-0517-4486-8f21-e5d138c97af7.png)
+![image](https://user-images.githubusercontent.com/60685289/197425983-95d0dd3c-7a0f-4959-814f-450a7fa4c14b.png)
 
 ### Part D
 ### Characterize your own Observant system
@@ -312,6 +321,14 @@ During the lecture, we mentioned questions to help characterize a material:
 * How does X feel?
 
 **\*\*\*Include a short video demonstrating the answers to these questions.\*\*\***
+
+For this part, I added a background class to the garbage classifier as well. This can be used for identifying the type of object that is thrown in the garbage can. Then, show the user what the result is and an option manually change the result. Then, the garbage should automatically put it in its right place. Agood environment for it would be in the outside since this might take a lot of space. Also, inside the garbage there should be light always on to be able to classify the images (bad environment). The classification will break if multiple items were thrown in the garbage at once, since the classifier only works for one item at a time. It might show the wrong classification for one of the items and include it with other. Lastly this device should have a nice design which is the most important thing. The noise shouldn't be too lowed when putting the items in the right place. It should do it as fast as possible to give a place for the next item.
+
+A short video that shows how the classifier works is below: 
+
+
+https://user-images.githubusercontent.com/60685289/197429126-dc49f650-9e09-42a1-8c7b-6ac07204a2ec.mp4
+
 
 ### Part 2.
 
