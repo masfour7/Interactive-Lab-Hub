@@ -336,4 +336,4 @@ Following exploration and reflection from Part 1, finish building your interacti
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
 
-## Currently working on it; I apologize for being a bit late
+## Currently working on it; I apologize for the delay
