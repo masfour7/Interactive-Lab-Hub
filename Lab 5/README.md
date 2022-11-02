@@ -335,3 +335,5 @@ https://user-images.githubusercontent.com/60685289/197429126-dc49f650-9e09-42a1-
 Following exploration and reflection from Part 1, finish building your interactive system, and demonstrate it in use with a video.
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
+
+## Currently working on it; I apologize for the delay
