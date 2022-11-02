@@ -336,9 +336,9 @@ Following exploration and reflection from Part 1, finish building your interacti
 
 **\*\*\*Include a short video demonstrating the finished result.\*\*\***
 
-### Diagram:
+For this part of the lab, I finished building my design and implemented a first prtotype that at least helped me to test the interaction with users. I also added a way to show a display where users can input whether the classification by the machine was correct or not; this well help in making the machine more accurate by learning from new data. I also added a couple more examples for the machine to learn and tested it. The result for these specific examples were great which hints that adding more examples could work as great as this also.
 
-I added a way to show a display where users can input whether the classification by the machine was correct or not; this well help in making the machine more accurate.
+### Diagram:
 
 ![image](https://user-images.githubusercontent.com/60685289/199490598-4498eb47-3f89-4962-832b-8685dc2f58ea.png)
 
