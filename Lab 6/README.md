@@ -96,6 +96,16 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
+1. In a multiplayer strategy game if the team commander wants to send cretain information to his/her team throgh a specific private topic
+
+2. In an anonymous game that could be played with classmates to form teammates for example by teaming with people who you like based on what they write instead of how they look
+
+3. In Smart buildings. Use the controller system to turn off certain unused room lights if no people exist in there
+
+4. In smart home systems. For example, notify someone who rings the doorbell whether there are some people in the house or not
+
+5. In a big cafeteria with multiple restaurants. For example, notify the buyers that their food is read for pick up
+
 ### Part C
 ### Streaming a Sensor
 
