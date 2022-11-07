@@ -1,6 +1,6 @@
 # Little Interactions Everywhere
 
-**NAMES OF COLLABORATORS HERE**
+**Mohammad Asfour (mya26) & Phillip O'Reggio (pno3)**
 
 ## Prep
 
@@ -96,6 +96,16 @@ Once connected, you should be able to see all the messages under the IDD topic. 
 
 **\*\*\*Consider how you might use this messaging system on interactive devices, and draw/write down 5 ideas here.\*\*\***
 
+1. In a multiplayer strategy game if the team commander wants to send cretain information to his/her team throgh a specific private topic
+
+2. In an anonymous game that could be played with classmates to form teammates for example by teaming with people who you like based on what they write instead of how they look
+
+3. In Smart buildings. Use the controller system to turn off certain unused room lights if no people exist in there
+
+4. In smart home systems. For example, notify someone who rings the doorbell whether there are some people in the house or not
+
+5. In a big cafeteria with multiple restaurants. For example, notify the buyers that their food is read for pick up
+
 ### Part C
 ### Streaming a Sensor
 
@@ -117,8 +127,22 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
 
+MQTT Explorer:
+![image](https://user-images.githubusercontent.com/60685289/200202850-57b23b60-e491-494f-8a6e-ca1ae0c79cf2.png)
+
+Setup:
+![IMG_4154](https://user-images.githubusercontent.com/60685289/200202979-049c94f5-5062-478a-b38f-84733c7c2d13.jpg)
+
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
+MQTT explorer:
+![image](https://user-images.githubusercontent.com/60685289/200203505-53323b3a-fc48-4724-87bc-5cdd8cd1dca1.png)
+
+Setup:
+![IMG_4155](https://user-images.githubusercontent.com/60685289/200203606-aa65081e-a34e-4d0d-993d-a8a247523a61.jpg)
+
+Code:
+Can be found in this file: distrib_distance_sender.py
 
 ### Part D
 ### The One True ColorNet
@@ -151,6 +175,7 @@ Of course not! You can go to [https://one-true-colornet.glitch.me/](https://one-
 
 **\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***
 
+https://user-images.githubusercontent.com/60685289/200204638-14454098-5e64-486e-8abb-0dee4f5feeb3.MOV
 
 ### Part E
 ### Make it your own
@@ -159,11 +184,27 @@ Find at least one class (more are okay) partner, and design a distributed applic
 
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
 
+In elementary school, a teacher rewards students with a star based board. We want to build a system where the teacher can reward the students using a device. Each student will see their own score on their device as well as the highest score. This can be helpful since the students would still be able to see their score even when they are at home. This would allow them to share their score with their parents as well.
+
+Currently the highest score a student can get is a 5. After that it will loop back to 0.
+
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
+
+Participants: This system involves 2 people (teacher & student) but it can be easily modified to support more students.
+Time/location: usually in a classroom setting in an elementary school.
+Operations: teacher will press any key to add a star to a specific student. Then the number of scores a student has will be displayed from his/her end.
+Sound: No voice input/output is included.
+Input, output and computation: the teacher is the only one who provides the input by pressing any key for a specific student to increase their score. the output will be the name of the student and his/her score. Computation is made to make sure the highest score is 5.
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 
+The design can be improved by specifying certain keys (such as +) to allow the teacher to increase the score of a specific student.
+
+![image](https://user-images.githubusercontent.com/60685289/200219015-dd113755-cc88-4989-8d91-dba912686bf9.png)
+
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
+
+https://user-images.githubusercontent.com/60685289/200223177-8821e047-aeca-4e86-b70c-6728e0f12da3.mp4
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
