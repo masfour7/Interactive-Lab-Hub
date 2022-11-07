@@ -186,9 +186,19 @@ Find at least one class (more are okay) partner, and design a distributed applic
 
 In elementary school, a teacher rewards students with a star based board. We want to build a system where the teacher can reward the students using a device. Each student will see their own score on their device as well as the highest score. This can be helpful since the students would still be able to see their score even when they are at home. This would allow them to share their score with their parents as well.
 
+Currently the highest score a student can get is a 5. After that it will loop back to 0.
+
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
 
+Participants: This system involves 2 people (teacher & student) but it can be easily modified to support more students.
+Time/location: usually in a classroom setting in an elementary school.
+Operations: teacher will press any key to add a star to a specific student. Then the number of scores a student has will be displayed from his/her end.
+Sound: No voice input/output is included.
+Input, output and computation: the teacher is the only one who provides the input by pressing any key for a specific student to increase their score. the output will be the name of the student and his/her score. Computation is made to make sure the highest score is 5.
+
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
+
+The design can be improved by specifying certain keys (such as +) to allow the teacher to increase the score of a specific student.
 
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
