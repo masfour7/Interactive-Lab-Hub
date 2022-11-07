@@ -1,6 +1,6 @@
 # Little Interactions Everywhere
 
-**NAMES OF COLLABORATORS HERE**
+**Mohammad Asfour (mya26) & Phillip O'Reggio (pno3)**
 
 ## Prep
 
