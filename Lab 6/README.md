@@ -204,5 +204,7 @@ The design can be improved by specifying certain keys (such as +) to allow the t
 
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
+https://user-images.githubusercontent.com/60685289/200223177-8821e047-aeca-4e86-b70c-6728e0f12da3.mp4
+
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
 
