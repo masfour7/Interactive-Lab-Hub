@@ -184,6 +184,8 @@ Find at least one class (more are okay) partner, and design a distributed applic
 
 **\*\*\*1. Explain your design\*\*\*** For example, if you made a remote controlled banana piano, explain why anyone would want such a thing.
 
+In elementary school, a teacher rewards students with a star based board. We want to build a system where the teacher can reward the students using a device. Each student will see their own score on their device as well as the highest score. This can be helpful since the students would still be able to see their score even when they are at home. This would allow them to share their score with their parents as well.
+
 **\*\*\*2. Diagram the architecture of the system.\*\*\*** Be clear to document where input, output and computation occur, and label all parts and connections. For example, where is the banana, who is the banana player, where does the sound get played, and who is listening to the banana music?
 
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
