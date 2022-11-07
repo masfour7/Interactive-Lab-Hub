@@ -127,8 +127,22 @@ Plug in the capacitive sensor board with the Qwiic connector. Use the alligator 
 
 **\*\*\*Include a picture of your setup here: what did you see on MQTT Explorer?\*\*\***
 
+MQTT Explorer:
+![image](https://user-images.githubusercontent.com/60685289/200202850-57b23b60-e491-494f-8a6e-ca1ae0c79cf2.png)
+
+Setup:
+![IMG_4154](https://user-images.githubusercontent.com/60685289/200202979-049c94f5-5062-478a-b38f-84733c7c2d13.jpg)
+
 **\*\*\*Pick another part in your kit and try to implement the data streaming with it.\*\*\***
 
+MQTT explorer:
+![image](https://user-images.githubusercontent.com/60685289/200203505-53323b3a-fc48-4724-87bc-5cdd8cd1dca1.png)
+
+Setup:
+![IMG_4155](https://user-images.githubusercontent.com/60685289/200203606-aa65081e-a34e-4d0d-993d-a8a247523a61.jpg)
+
+Code:
+Can be found in this file: distrib_distance_sender.py
 
 ### Part D
 ### The One True ColorNet
@@ -161,6 +175,7 @@ Of course not! You can go to [https://one-true-colornet.glitch.me/](https://one-
 
 **\*\*\*Can you set up the script that can read the color anyone else publish and display it on your screen?\*\*\***
 
+https://user-images.githubusercontent.com/60685289/200204638-14454098-5e64-486e-8abb-0dee4f5feeb3.MOV
 
 ### Part E
 ### Make it your own
