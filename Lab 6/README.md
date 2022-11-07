@@ -200,6 +200,8 @@ Input, output and computation: the teacher is the only one who provides the inpu
 
 The design can be improved by specifying certain keys (such as +) to allow the teacher to increase the score of a specific student.
 
+![image](https://user-images.githubusercontent.com/60685289/200219015-dd113755-cc88-4989-8d91-dba912686bf9.png)
+
 **\*\*\*4. Document the working prototype in use.\*\*\*** It may be helpful to record a Zoom session where you should the input in one location clearly causing response in another location.
 
 <!--**\*\*\*5. BONUS (Wendy didn't approve this so you should probably ignore it)\*\*\*** get the whole class to run your code and make your distributed system BIGGER.-->
