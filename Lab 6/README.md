@@ -199,6 +199,7 @@ Input, output and computation: the teacher is the only one who provides the inpu
 **\*\*\*3. Build a working prototype of the system.\*\*\*** Do think about the user interface: if someone encountered these bananas somewhere in the wild, would they know how to interact with them? Should they know what to expect?
 
 The design can be improved by specifying certain keys (such as +) to allow the teacher to increase the score of a specific student.
+Code is in student.py & teacher.py
 
 ![image](https://user-images.githubusercontent.com/60685289/200219015-dd113755-cc88-4989-8d91-dba912686bf9.png)
 
