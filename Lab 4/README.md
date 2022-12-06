@@ -1,6 +1,9 @@
 # Ph-UI!!!
 
-For lab this week, we focus on both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
+**Mohammad Asfour Only**
+
+
+For lab this week, we focus both on sensing, to bring in new modes of input into your devices, as well as prototyping the physical look and feel of the device. You will think about the physical form the device needs to perform the sensing as well as present the display or feedback about what was sensed. 
 
 ## Part 1 Lab Preparation
 
@@ -11,7 +14,7 @@ As always, pull updates from the class Interactive-Lab-Hub to both your Pi and y
 
 ```
 pi@ixe00:~$ cd Interactive-Lab-Hub
-pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2021
+pi@ixe00:~/Interactive-Lab-Hub $ git pull upstream Fall2022
 pi@ixe00:~/Interactive-Lab-Hub $ git add .
 pi@ixe00:~/Interactive-Lab-Hub $ git commit -m "get lab4 content"
 pi@ixe00:~/Interactive-Lab-Hub $ git push
@@ -150,9 +153,7 @@ Connect it to your pi with Qwiic connector and try running the example script to
 
 You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_Joystick_Py) to learn more about the sensor!
 
-#### (Optional) Distance Sensor
-
-Note: We did not distribute this sensor to you, so if you are interested in playing with it, please come pick it up from the TA!
+#### Distance Sensor
 
 Earlier we have asked you to play with the proximity sensor, which is able to sense object within a short distance. Here, we offer [Qwiic Multi Distance Sensor](https://www.sparkfun.com/products/17072), which has a field of view of about 25° and is able to detect objects up to 3 meters away! 
 
@@ -173,12 +174,15 @@ You can go to the [SparkFun GitHub Page](https://github.com/sparkfun/Qwiic_VL53L
 
 Usually, sensors need to positioned in specific locations or orientations to make them useful for their application. Now that you've tried a bunch of the sensors, pick one that you would like to use, and an application where you use the output of that sensor for an interaction. For example, you can use a distance sensor to measure someone's height if you position it overhead and get them to stand under it.
 
+### Working on it - will submit ASAP.
 **\*\*\*Draw 5 sketches of different ways you might use your sensor, and how the larger device needs to be shaped in order to make the sensor useful.\*\*\***
+![image](https://user-images.githubusercontent.com/60685289/195509330-a1cd9e40-a298-4995-8ad5-ca87b36eefe0.png)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
+What the size of the prototype should be is an imprtant main question. To answer it, different prototypes can be constructed and tested with user to figure out what's the most comfortable thing in terms of user experience. Also, for the distance sensor, where should it be located exactly. Since it has a certain width it can measure from. This would be critical for it to work as intended. Again it can be ansered by testing.
 
 **\*\*\*Pick one of these designs to prototype.\*\*\***
-
+Finding lost things (fifth sketch)
 
 ### Part D
 ### Physical considerations for displaying information and housing parts
@@ -219,16 +223,31 @@ Here is an example:
 Think about how you want to present the information about what your sensor is sensing! Design a paper display for your project that communicates the state of the Pi and a sensor. Ideally you should design it so that you can slide the Pi out to work on the circuit or programming, and then slide it back in and reattach a few wires to be back in operation.
  
 **\*\*\*Sketch 5 designs for how you would physically position your display and any buttons or knobs needed to interact with it.\*\*\***
+![image](https://user-images.githubusercontent.com/60685289/195666370-b468d594-7c0f-4cf5-b713-bfd24da2fbf1.png)
 
 **\*\*\*What are some things these sketches raise as questions? What do you need to physically prototype to understand how to anwer those questions?\*\*\***
 
+Can those be really created? Some are really small. Some are circular. Do we have the electronics & technology to create such things?
+
 **\*\*\*Pick one of these display designs to integrate into your prototype.\*\*\***
 
+I pick number two for the remote attachment.
+
 **\*\*\*Explain the rationale for the design.\*\*\*** (e.g. Does it need to be a certain size or form or need to be able to be seen from a certain distance?)
+
+It includes three user interfaces: 
+- speaker: to activate a sound when you lose something)
+- distance sensor: to measure how far away you are from the remote)
+- display: to show a red screen turn off and on when you lose something so that you can notice it
+
+It should be as small as possible. Also one should be able to attach it to things like remote.
 
 Build a cardbord prototype of your design.
 
 **\*\*\*Document your rough prototype.\*\*\***
+![remote Find](https://user-images.githubusercontent.com/60685289/195666572-0661ff5f-8cdf-48f8-884e-6dd9bf07c534.jpeg)
+
+As you can see it is too big. I will explore ways to make it smaller next!
 
 
 LAB PART 2
@@ -240,7 +259,7 @@ Following exploration and reflection from Part 1, complete the "looks like," "wo
 ### Part E (Optional)
 ### Servo Control with Joystick
 
-In the class kit, you should be able to find the [Qwiic Servo Controller](https://www.sparkfun.com/products/16773) and [Micro Servo Motor SG51](https://www.adafruit.com/product/2201). The Qwiic Servo Controller will need external power supply to drive, which we will be distributing the battery packs in the class. Connect the servo controller to the miniPiTFT through qwiic connector and connect the external battery to the 2-Pin JST port (ower port) on the servo controller. Connect your servo to channel 2 on the controller, make sure the brown is connected to GND and orange is connected to PWM.
+In the class kit, you should be able to find the [Qwiic Servo Controller](https://www.sparkfun.com/products/16773) and [Micro Servo Motor SG51](https://www.adafruit.com/product/2201). The Qwiic Servo Controller will need external power supply to drive, which are included in your kit. Connect the servo controller to the miniPiTFT through qwiic connector and connect the external battery to the 2-Pin JST port (ower port) on the servo controller. Connect your servo to channel 2 on the controller, make sure the brown is connected to GND and orange is connected to PWM.
 
 <img src="Servo_Setup.jpg" width="400"/>
 
@@ -271,6 +290,38 @@ We encourage you to try using these controls, **while** paying particular attent
 
 Document all the prototypes and iterations you have designed and worked on! Again, deliverables for this lab are writings, sketches, photos, and videos that show what your prototype:
 * "Looks like": shows how the device should look, feel, sit, weigh, etc.
+
+The main issue with the previous design was the size. It had to be much much smaller for a good user experience. I found two main things I can do to accomodate that:
+1. separate the devices: a user might not need all of them at the same time. 
+- blinking screen: It can be helpful to find lost things while at dark and do not want to make noise
+- distance sensor: It can be useful for blind people to help them navigate to the thing they're looking for
+- speakers: this might be the most useful option for everyone. the lost thing will give noise and that way you'll know where it is
+
+2. found smaller rasberry pi and speakers online (haven't used them yet; but for next iterations)
+
+That said, I had multiple iterations of how the design might look like and most importantly all are small:
+![image](https://user-images.githubusercontent.com/60685289/196446103-548454bf-3629-4cfc-a505-4c1f2cd293ba.png)
+
 * "Works like": shows what the device can do
+
+After multiple trials this is the design I found to be most comfortable; although it needs smaller rasberry pi and speakers:
+
+![WhatsApp Image 2022-10-18 at 4 23 41 PM](https://user-images.githubusercontent.com/60685289/196539541-b224144d-4b55-43a7-b699-48b0ae723b11.jpeg)
+![WhatsApp Image 2022-10-18 at 4 23 42 PM](https://user-images.githubusercontent.com/60685289/196539610-4dfe2946-63cf-4263-9a1f-f3afa54af0ff.jpeg)
+
+1. Blinking screen: the colors chosen were red and white since they can help people notice the item easily 
+2. Distance device: it lets a person know if he/she is 
+- far
+- close
+- reached the wanted iteam
+3. Speakers: it gives a sound of "I am here" instead of just annoying sounds. I found this to be better than most alarm sounds for example. But some alarm sounds are still good enough though.
+
 * "Acts like": shows how a person would interact with the device
 
+Video: https://drive.google.com/file/d/1VqkEIfQioh8wOe6trSRM4nvaQBdyW37P/view?usp=sharing
+
+For future iterations:
+- find smaller devices
+- make the design look cooler and easy to attach
+- find more features such as GPS
+- connect it with an app to control device settings and so on
