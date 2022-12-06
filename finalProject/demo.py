@@ -8,12 +8,12 @@ import qwiic_led_stick
 import sys
 import tensorflow.keras
 import time
+import qwiic
 
 # disrance
 ToF = qwiic.QwiicVL53L1X()
 if ToF.sensor_init() == None:  # Begin returns 0 on a good init
     print("Sensor is online\n")
-    j
 # ml
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
@@ -78,7 +78,7 @@ def set_all_colors(r, g, b):
     my_stick.set_all_LED_color(r, g, b)
 
 
-predict_tolerance_lim = 3
+predict_tolerance_lim = 1
 cur_in_a_row = 0
 last_pred = None
 
@@ -102,25 +102,27 @@ while True:
 
     # run the inference
     prediction = model.predict(data)
+    prediction = labels[np.argmax(prediction)]
     # print("I think its a:",labels[np.argmax(prediction)])
     if prediction == last_pred:
         cur_in_a_row += 1
     else:
         cur_in_a_row = 0
 
-    if cur_in_a_row > predict_tolerance_lim:
-        if prediction == "Cardboard":
-            my_stick.set_all_LED_cmd(100, 0, 0)
-        elif prediction == "Glass":
-            my_stick.set_all_LED_cmd(0, 100, 0)
-        elif prediction == "Metal":
-            my_stick.set_all_LED_cmd(0, 0, 100)
-        elif prediction == "Paper":
-            my_stick.set_all_LED_cmd(100, 100, 0)
-        elif prediction == "Plastic":
-            my_stick.set_all__LED_cmd(100, 0, 100)
-        elif prediction == "Trash":
-            my_stick.set_all_LED_cmd(0, 100, 100)
+    print(f'prediction is a  {prediction}')
+    #if cur_in_a_row >= predict_tolerance_lim:
+    if prediction == "Cardboard":
+        my_stick.set_all_LED_color(100, 0, 0)
+    elif prediction == "Glass":
+        my_stick.set_all_LED_color(0, 100, 0)
+    elif prediction == "Metal":
+        my_stick.set_all_LED_color(0, 0, 100)
+    elif prediction == "Paper":
+        my_stick.set_all_LED_color(100, 100, 0)
+    elif prediction == "Plastic":
+        my_stick.set_all_LED_color(100, 0, 100)
+    elif prediction == "Trash":
+        my_stick.set_all_LED_color(0, 100, 100)
 
     time.sleep(0.005)
     distance = ToF.get_distance()  # Get the result of the measurement from the sensor
