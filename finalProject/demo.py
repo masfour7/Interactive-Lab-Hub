@@ -9,6 +9,11 @@ import sys
 import tensorflow.keras
 import time
 
+# disrance
+ToF = qwiic.QwiicVL53L1X()
+if ToF.sensor_init() == None:  # Begin returns 0 on a good init
+    print("Sensor is online\n")
+    j
 # ml
 # Disable scientific notation for clarity
 np.set_printoptions(suppress=True)
@@ -116,6 +121,20 @@ while True:
             my_stick.set_all__LED_cmd(100, 0, 100)
         elif prediction == "Trash":
             my_stick.set_all_LED_cmd(0, 100, 100)
+
+    time.sleep(0.005)
+    distance = ToF.get_distance()  # Get the result of the measurement from the sensor
+    time.sleep(0.005)
+    ToF.stop_ranging()
+
+    distanceInches = distance / 25.4
+    distanceFeet = distanceInches / 12.0
+
+    print("Distance(mm): %s Distance(ft): %s" % (distance, distanceFeet))
+    if distance > 100:
+        close_lid()
+    else:
+        open_lid()
 
     # if webCam:
     #     if sys.argv[-1] == "noWindow":
