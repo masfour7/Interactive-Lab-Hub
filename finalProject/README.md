@@ -67,6 +67,22 @@ After making our product we learned that coding is only 1 small part of building
 I wish I knew about how difficult it would be getting the pieces and structure together, as I would of gotten a better material than cardboard boxes I had lying around and spent more time on making a good bin.
 
 
+TODOS:
+Other things to write about:
+
+vidoes + documentation of building process
+
+What to improve
+unexpected stuff:
+- effect of lights on the camera
+- figuring out effect of backgruond on image recognition
+- accounting for the several second delay in image recognition, and the effects on the interaction expectations
+improvements:
+- paper saying what colors mean
+- paper with a circle or something to indicate to people where to hold things up
+- improve construction of the box overall
+
+
 ## Group Work Distributions
 
 Mohammad
@@ -77,3 +93,5 @@ Mohammad
 Phillip
 - making the bin
 - writing code for the lid, oled, sensors
+
+

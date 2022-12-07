@@ -109,8 +109,8 @@ while True:
     else:
         cur_in_a_row = 0
 
-    print(f'prediction is a  {prediction}')
-    #if cur_in_a_row >= predict_tolerance_lim:
+    print(f"prediction is a  {prediction}")
+    # if cur_in_a_row >= predict_tolerance_lim:
     if prediction == "Cardboard":
         my_stick.set_all_LED_color(100, 0, 0)
     elif prediction == "Glass":
@@ -124,6 +124,7 @@ while True:
     elif prediction == "Trash":
         my_stick.set_all_LED_color(0, 100, 100)
 
+    ToF.start_ranging()
     time.sleep(0.005)
     distance = ToF.get_distance()  # Get the result of the measurement from the sensor
     time.sleep(0.005)
