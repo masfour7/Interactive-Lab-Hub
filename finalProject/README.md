@@ -62,26 +62,33 @@ The design of the overall apparatus had to change a bit to account for scale, si
 
 
 ## Reflections
-After making our product we learned that coding is only 1 small part of building a good interaction and making a sensible system. For out example, coding was by far the easiest part but what was far trickier was getting the right sensors in the right places, and doing so in a way that didn't make the garbage bin just fall apart. Even if we managed to get everything where it needed to, there was still the interaction side as often people would tno act how we expected. We assumed that they would just hold their objects in front of the camera, but people were sometimes confused on where to hold it. Also since the lid is controlled by a distance sensor as well as the camera, the lid might close and open unexpectedly, also confusing people. These were all things that got glossed over in our initial design of the bin but ended up being pretty important for the actual function of our idea.
+After making our product we learned that coding is only 1 small part of building a good interaction and making a sensible system. For out example, coding was by far the easiest part but what was far trickier was getting the right sensors in the right places, and doing so in a way that didn't make the garbage bin just fall apart. Even if we managed to get everything where it needed to, there was still the interaction side as often people would tno act how we expected. We assumed that they would just hold their objects in front of the camera, but people were sometimes confused on where to hold it.
+
+For the demo itself, we ended up running into technical issues with both the code and apparatus, and endd up not being able to get the distance sensor or motor working in time. This made us have to change our interaction on the fly, since the lid opening and the distance were kind of important for potraying any kind of connection of the image classification to the operation of the bin. We pivoted to a setup where we held the object to the side of the bin and had the bin itself light up, which worked on a techincal level but was pretty not intuitive.
+
+Despite this, we did learn a lot abou thte interaction. One big thing was how the speed of the pi's image recognition affected the interaction. The pi itself is kind of slow at classifying, taking several seconds for it to catch up and process what it sees. This means people would have to hold the object in front of the can for several seconds before the bin would light up as intended, which led to a lot of confusion at the actual demo.
+
+Also from the TA and professor's feedback, we learnd that we should use some kind of platform/display to indicate to the user where they should hold the item. We had initially assumed the camera's direction would be enough, but this was a mistake on our part. 
+
+Another thing to note is that the OLED's were so bright, it would shine onto the view of the camera, and in turn, affect the image classification. This made a lot of sense seeing it happen in person when we tested it and at the demo, but was definitely not something we considered in storyboarding or the early design stages.
+
+Another thing we realized pretty immediately at the event is the need for a label describing te meaning of the colors. In our very early designs, we kin do fassumped the multuple bins would be color coded so that would of been an indicator to the user. However, in practice with our one bin, it was pretty cryptic.
 
 I wish I knew about how difficult it would be getting the pieces and structure together, as I would of gotten a better material than cardboard boxes I had lying around and spent more time on making a good bin.
 
+## Build Process
 
-TODOS:
-Other things to write about:
+Getting image recognition working
+[![img](TODO fill this in)]
 
-vidoes + documentation of building process
+Early lid functionality
+[![img](TODO fill this in)]
 
-What to improve
-unexpected stuff:
-- effect of lights on the camera
-- figuring out effect of backgruond on image recognition
-- accounting for the several second delay in image recognition, and the effects on the interaction expectations
-improvements:
-- paper saying what colors mean
-- paper with a circle or something to indicate to people where to hold things up
-- improve construction of the box overall
+Image Recognition on the pi
+[![img](TODO fill this in)]
 
+Getting things to work after the demo
+[![img](TODO fill this in)]
 
 ## Group Work Distributions
 
