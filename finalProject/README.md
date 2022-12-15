@@ -1,5 +1,5 @@
 # Final Project - The Super Garbage
-#### Group members: Phillip O’Reggio (pno3) and Mohammad Asfour (mya26)
+#### Group Members: Phillip O’Reggio (pno3) and Mohammad Asfour (mya26)
 
 ## 1. Project Plan
 ### Big Idea
