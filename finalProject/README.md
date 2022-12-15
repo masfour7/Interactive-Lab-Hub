@@ -54,9 +54,18 @@ https://docs.google.com/presentation/d/1koWn-A9DBmQv5UOUdNL5OAPvQidD9utu1aMnhL6C
 ## 2. Functioning Project
 In building our model trash can, we had to make some comprosmises between the design we aimed to make and what we could actually build. **Since the motor we have is small, we scaled down bin to a small model**. Also since we only have 1 motor, we had to alter the design and interaction a bit. **Instead of the machine learning model opening up the proper bin, we instead indicate what it classified it as using the OLED for a color, and included a guide nearby so people understand the meaning of the colors**. Whenever it detects any kind of trash, the lid opens up, making it easy to tell that the lid's actions is tied to what is currently in front of the sensor.
 
-The design of the overall apparatus had to change a bit to account for scale, since when we scaled everything down, the webcam now was by far the largest piece of hardware involved. Also since we built it out of cardboard we had some issues with weighta and getting the entire thing to stay in position (espeically with the movement of the motor).
+The design of the overall apparatus had to change a bit to account for scale, since when we scaled everything down, the webcam now was by far the largest piece of hardware involved. Also since we built it out of cardboard we had some issues with weights and getting the entire thing to stay in position (espeically with the movement of the motor).
+
+![image](https://user-images.githubusercontent.com/60685289/207825344-adfefd50-99da-4ac3-bec0-65e0fc02b04d.png)
+![WhatsApp Image 2022-12-15 at 4 40 44 AM](https://user-images.githubusercontent.com/60685289/207825851-b0bc67fb-95f9-4e89-98e2-0079c1a78438.jpeg)
+![WhatsApp Image 2022-12-15 at 4 40 01 AM (1)](https://user-images.githubusercontent.com/60685289/207825857-0e06dd32-4b88-4bd5-bdca-af671e899428.jpeg)
+![WhatsApp Image 2022-12-15 at 4 40 01 AM](https://user-images.githubusercontent.com/60685289/207825859-a472df0b-8554-4476-b874-be7d6cd796a4.jpeg)
 
 ## 3. Documentation of design process
+![image](https://user-images.githubusercontent.com/60685289/207823282-5d3c993f-d410-4f1a-bf2e-b22fbcd776cc.png)
+![image](https://user-images.githubusercontent.com/60685289/207823432-83710f99-ae06-4b04-9ebd-d72486984cf3.png)
+
+![image](https://user-images.githubusercontent.com/60685289/207823545-b8bb82e7-c06e-4035-b999-4e804572497a.png)
 
 ## 4. Archive of all code & design patterns used in the final design.
 
