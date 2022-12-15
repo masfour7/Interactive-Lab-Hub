@@ -1,4 +1,5 @@
-Phillip O’Reggio (pno3), Mohammad Asfour (mya26)
+# Final Project - Super Garbage
+### Group members: Phillip O’Reggio (pno3) and Mohammad Asfour (mya26)
 
 ![input settings](draftdrawing.png)
 
