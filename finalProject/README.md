@@ -2,7 +2,7 @@
 #### Group Members: Phillip O’Reggio (pno3) and Mohammad Asfour (mya26)
 
 ## 1. Project Plan
-### Big Idea
+### Description (Big Idea)
 Essentially creating a trash enclosure with multiple bins. Each bins will be designated to collect a different material (i.e. compost, plastics, general waste)
 When the user walks up to the trash enclosure, an decision making algorithm will be used to determine which type of material the trash the user is trying to throw away is based on the material of the trash, the enclosure will automatically open the lid of the respective enclosure it should go into
 The waste enclosure will also be able to detect which bins are full to prevent any sort of trash overflow.
