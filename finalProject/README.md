@@ -90,14 +90,17 @@ Another thing we realized pretty immediately at the event is the need for a labe
 I wish I knew about how difficult it would be getting the pieces and structure together, as I would of gotten a better material than cardboard boxes I had lying around and spent more time on making a good bin.
 
 ## 7. Group Work Distributions
+We both helped each other and learned from each other's mistakes. But this was each one's focus:
 
 Mohammad
 - training the model
 - finding image data for the model
 - getting the model to run on the pi
+- help Phillip with any challenges
 
 Phillip
 - making the bin
 - writing code for the lid, oled, sensors
+- help Mohammad with any challenges
 
 ## The End - Thank you for a great semester !! :D
