@@ -69,7 +69,8 @@ The design of the overall apparatus had to change a bit to account for scale, si
 
 ## 4. Archive of all code & design patterns used in the final design.
 
-We got the data from: https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification
+- We got the data from: https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification
+- Model trained is stored in ![keras_model](https://github.com/masfour7/Interactive-Lab-Hub/blob/Fall2022/finalProject/keras_model.h5)
 
 Getting image recognition working
 [![img](TODO fill this in)]
