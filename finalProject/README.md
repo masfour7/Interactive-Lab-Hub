@@ -14,7 +14,7 @@ The waste enclosure will also be able to detect which bins are full to prevent a
 - Design process and testing the best possible design based on user testing
 
 #### Week 2 (11/22 - 11/29) - “Demonstrate that your project is functioning well enough for somebody to use and interact with it. This presentation will just be to the teaching team.”
-Build the software that will use the algorithm: it would give the algorithm an input and takes an output back. Then do certain tasks
+- Build the software that will use the algorithm: it would give the algorithm an input and takes an output back. Then do certain tasks
 - Build an actual prototype
 - Add sensor functionality to identify when the garbage is full
 - User testing and feedback
