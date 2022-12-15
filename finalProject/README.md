@@ -48,8 +48,7 @@ This project will require several motors to automate the opening and closing of 
 ### Fall-back plan
 Some issues that may arise is that we may either run out of time to complete all the features of the project, or find ourselves unable to acquire all the parts needed for the project. In those situations we intend to make a simpler version of this idea. One option is to remove the classification aspect and only have 1 compartment that automatically opens for the user when they get close. Another option is to pivot on the trashcan idea to instead focus on just the classification aspect using the webcam. It would look at the trash the user holds in front of the camera, and then the speaker would audibly say what type of trash it is.
 
-### other links
-Slides
+### Slides
 https://docs.google.com/presentation/d/1koWn-A9DBmQv5UOUdNL5OAPvQidD9utu1aMnhL6Cs6s/edit##slide=id.g18d71ccba20_1_0
 
 ## 2. Functioning Project
