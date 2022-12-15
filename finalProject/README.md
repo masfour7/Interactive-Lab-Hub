@@ -70,21 +70,14 @@ The design of the overall apparatus had to change a bit to account for scale, si
 ## 4. Archive of all code & design patterns used in the final design.
 
 - We got the data from: https://www.kaggle.com/datasets/asdasdasasdas/garbage-classification
-- Model trained is stored in ![keras_model](https://github.com/masfour7/Interactive-Lab-Hub/blob/Fall2022/finalProject/keras_model.h5)
-
-Getting image recognition working
-[![img](TODO fill this in)]
-
-Early lid functionality
-[![img](TODO fill this in)]
-
-Image Recognition on the pi
-[![img](TODO fill this in)]
-
-Getting things to work after the demo
-[![img](TODO fill this in)]
+- Before starting, download all requirements from [requirements.txt](https://github.com/masfour7/Interactive-Lab-Hub/blob/Fall2022/finalProject/requirements.txt)
+- Model trained is stored in [keras_model.h5](https://github.com/masfour7/Interactive-Lab-Hub/blob/Fall2022/finalProject/keras_model.h5)
+- Labels are shown in [labels.txt](https://github.com/masfour7/Interactive-Lab-Hub/blob/Fall2022/finalProject/labels.txt)
+- Main code that includes all main functionality is in [demo.py](https://github.com/masfour7/Interactive-Lab-Hub/blob/Fall2022/finalProject/demo.py)
 
 ## 5. Video of someone using your project
+
+https://user-images.githubusercontent.com/60685289/207835641-42417192-5ad8-46bd-98e0-fc557d9e9577.mov
 
 ## 6. Reflections
 After making our product we learned that coding is only 1 small part of building a good interaction and making a sensible system. For out example, coding was by far the easiest part but what was far trickier was getting the right sensors in the right places, and doing so in a way that didn't make the garbage bin just fall apart. Even if we managed to get everything where it needed to, there was still the interaction side as often people would tno act how we expected. We assumed that they would just hold their objects in front of the camera, but people were sometimes confused on where to hold it.
