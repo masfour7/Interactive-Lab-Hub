@@ -77,7 +77,7 @@ The design of the overall apparatus had to change a bit to account for scale, si
 
 ## 5. Video of someone using your project
 
-https://user-images.githubusercontent.com/60685289/207835641-42417192-5ad8-46bd-98e0-fc557d9e9577.mov
+https://ser-images.githubusercontent.com/60685289/207997762-65e624ab-cd3e-4b51-85d3-261f72fe2f88.mov
 
 ## 6. Reflections
 After making our product we learned that coding is only 1 small part of building a good interaction and making a sensible system. For out example, coding was by far the easiest part but what was far trickier was getting the right sensors in the right places, and doing so in a way that didn't make the garbage bin just fall apart. Even if we managed to get everything where it needed to, there was still the interaction side as often people would tno act how we expected. We assumed that they would just hold their objects in front of the camera, but people were sometimes confused on where to hold it.
