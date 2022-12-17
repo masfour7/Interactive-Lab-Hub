@@ -56,16 +56,28 @@ In building our model trash can, we had to make some comprosmises between the de
 
 The design of the overall apparatus had to change a bit to account for scale, since when we scaled everything down, the webcam now was by far the largest piece of hardware involved. Also since we built it out of cardboard we had some issues with weights and getting the entire thing to stay in position (espeically with the movement of the motor).
 
+This image clarifies the output color the user should see depending on the objevt type:
 ![image](https://user-images.githubusercontent.com/60685289/207825344-adfefd50-99da-4ac3-bec0-65e0fc02b04d.png)
+
+This is the final device we built:
 ![WhatsApp Image 2022-12-15 at 4 40 44 AM](https://user-images.githubusercontent.com/60685289/207825851-b0bc67fb-95f9-4e89-98e2-0079c1a78438.jpeg)
 ![WhatsApp Image 2022-12-15 at 4 40 01 AM (1)](https://user-images.githubusercontent.com/60685289/207825857-0e06dd32-4b88-4bd5-bdca-af671e899428.jpeg)
 ![WhatsApp Image 2022-12-15 at 4 40 01 AM](https://user-images.githubusercontent.com/60685289/207825859-a472df0b-8554-4476-b874-be7d6cd796a4.jpeg)
 
 ## 3. Documentation of design process
+
+Objective of our opreject (what happens now vs what should happen):
 ![image](https://user-images.githubusercontent.com/60685289/207823282-5d3c993f-d410-4f1a-bf2e-b22fbcd776cc.png)
 ![image](https://user-images.githubusercontent.com/60685289/207823432-83710f99-ae06-4b04-9ebd-d72486984cf3.png)
 
+This is the design we were aiming to acheive if we had more time/resources:
+In short, the user would be able to throw the object in one place, and the machine would automatically place it in the right position.
 ![image](https://user-images.githubusercontent.com/60685289/207823545-b8bb82e7-c06e-4035-b999-4e804572497a.png)
+
+### User testing & modification:
+For the real device we built, we used a lid color to indicate where the object should be placed. When we tested that with couple of users, we used a paper to indicate what each color means. Some of them thought the paper was something to throw; that's why we thought the color menu should be digitally shown instead. 
+
+In addition, people were sometimes confused where to hold the object (when the camera was on the side). So we changed its position to be directly infront of the user; although this did not solve the issue completely. The next step would be to use some kind of platform/display to indicate to the user where they should hold the item.
 
 ## 4. Archive of all code & design patterns used in the final design.
 
@@ -77,23 +89,21 @@ The design of the overall apparatus had to change a bit to account for scale, si
 
 ## 5. Video of someone using your project
 
-
-
+We had more user interactions that we learned from (as mentioned above) but only one was recorded (shown below):
 https://user-images.githubusercontent.com/60685289/207998029-5465446e-86c6-4b3f-9a10-9cd47c76a1c2.mov
 
-
 ## 6. Reflections
-After making our product we learned that coding is only 1 small part of building a good interaction and making a sensible system. For out example, coding was by far the easiest part but what was far trickier was getting the right sensors in the right places, and doing so in a way that didn't make the garbage bin just fall apart. Even if we managed to get everything where it needed to, there was still the interaction side as often people would tno act how we expected. We assumed that they would just hold their objects in front of the camera, but people were sometimes confused on where to hold it.
+After making our product we learned that coding is only 1 small part of building a good interaction and making a sensible system. For our example, coding was by far the easiest part but what was far trickier was getting the right sensors in the right places, and doing so in a way that didn't make the garbage bin just fall apart. Even if we managed to get everything where it needed to, there was still the interaction side as often people would not act how we expected. We assumed that they would just hold their objects in front of the camera, but people were sometimes confused on where to hold it.
 
-For the demo itself, we ended up running into technical issues with both the code and apparatus, and endd up not being able to get the distance sensor or motor working in time. This made us have to change our interaction on the fly, since the lid opening and the distance were kind of important for potraying any kind of connection of the image classification to the operation of the bin. We pivoted to a setup where we held the object to the side of the bin and had the bin itself light up, which worked on a techincal level but was pretty not intuitive.
+For the demo itself, we ended up running into technical issues with both the code and apparatus, and ended up not being able to get the distance sensor or motor working in time. This made us have to change our interaction on the fly, since the lid opening and the distance were kind of important for potraying any kind of connection of the image classification to the operation of the bin. We pivoted to a setup where we held the object to the side of the bin and had the bin itself light up, which worked on a techincal level but was pretty not intuitive.
 
-Despite this, we did learn a lot abou thte interaction. One big thing was how the speed of the pi's image recognition affected the interaction. The pi itself is kind of slow at classifying, taking several seconds for it to catch up and process what it sees. This means people would have to hold the object in front of the can for several seconds before the bin would light up as intended, which led to a lot of confusion at the actual demo.
+Despite this, we did learn a lot about the interaction. One big thing was how the speed of the pi's image recognition affected the interaction. The pi itself is kind of slow at classifying, taking several seconds for it to catch up and process what it sees. This means people would have to hold the object in front of the can for several seconds before the bin would light up as intended, which led to a lot of confusion at the actual demo.
 
 Also from the TA and professor's feedback, we learnd that we should use some kind of platform/display to indicate to the user where they should hold the item. We had initially assumed the camera's direction would be enough, but this was a mistake on our part. 
 
 Another thing to note is that the OLED's were so bright, it would shine onto the view of the camera, and in turn, affect the image classification. This made a lot of sense seeing it happen in person when we tested it and at the demo, but was definitely not something we considered in storyboarding or the early design stages.
 
-Another thing we realized pretty immediately at the event is the need for a label describing te meaning of the colors. In our very early designs, we kin do fassumped the multuple bins would be color coded so that would of been an indicator to the user. However, in practice with our one bin, it was pretty cryptic.
+Another thing we realized pretty immediately at the event is the need for a label describing te meaning of the colors. In our very early designs, we kind of assumed the multiple bins would be color coded so that would have been an indicator to the user. However, in practice with our one bin, it was pretty cryptic.
 
 I wish I knew about how difficult it would be getting the pieces and structure together, as I would of gotten a better material than cardboard boxes I had lying around and spent more time on making a good bin.
 
