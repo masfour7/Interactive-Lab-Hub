@@ -90,7 +90,11 @@ In addition, people were sometimes confused where to hold the object (when the c
 ## 5. Video of someone using your project
 
 We had more user interactions that we learned from (as mentioned above) but only one was recorded (shown below):
+
+
 https://user-images.githubusercontent.com/60685289/207998029-5465446e-86c6-4b3f-9a10-9cd47c76a1c2.mov
+
+
 
 ## 6. Reflections
 After making our product we learned that coding is only 1 small part of building a good interaction and making a sensible system. For our example, coding was by far the easiest part but what was far trickier was getting the right sensors in the right places, and doing so in a way that didn't make the garbage bin just fall apart. Even if we managed to get everything where it needed to, there was still the interaction side as often people would not act how we expected. We assumed that they would just hold their objects in front of the camera, but people were sometimes confused on where to hold it.
